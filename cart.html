@@ -121,7 +121,60 @@
 		</div>
 
 		<div class="container-fluid">
-			<h1>购物车</h1> 需有一个提交订单钮,跳转到order_info.html 另有一个文字链接到订单页面order_list.html
+			<div class="row">
+
+				<div class="container-fluid" style="margin:0 auto; margin-top:10px;width:100%;">
+					<strong style="font-size:16px;">订单详情</strong>
+					<table class="table table-bordered">
+						<tbody>
+							<tr class="warning">
+								<th>图片</th>
+								<th>商品</th>
+								<th>价格</th>
+								<th>数量</th>
+								<th>小计</th>
+								<th>操作</th>
+							</tr>
+							<tr class="active">
+								<td width="60" width="40%">
+									<input type="hidden" name="id" value="22">
+									<img src="img/1a07c21f51754b61bf6f295c6b25462d1505286424478j7ioo6mb10655.jpg" width="70" height="60">
+								</td>
+								<td width="30%">
+									<a href="product_info.html" target="_blank"> iPhone&nbsp;8&nbsp;玫瑰金...</a>
+								</td>
+								<td width="20%">
+									￥6799.00
+								</td>
+								<td width="10%">
+									<input type="text" name="quantity" value="1" maxlength="4" size="10">
+								</td>
+								<td width="15%">
+									<span class="subtotal">￥6799.00</span>
+								</td>
+								<td>
+									<a href="#" class="delete">删除</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div style="margin-right:130px;">
+				<div style="text-align:right;">
+					<em style="color:#ff6600;">
+				登录后确认是否享有优惠&nbsp;&nbsp;
+			</em> 赠送积分: <em style="color:#ff6600;">6799</em>&nbsp; 商品金额: <strong style="color:#ff6600;">￥6799.00元</strong>
+				</div>
+				<div style="text-align:right;margin-top:10px;margin-bottom:10px;">
+					<a href="order_info.html" id="clear" class="clear">清空购物车</a>
+					<a href="order_info.html">
+						<input type="submit" width="100" value="提交订单" name="submit" border="0" style="border-radius: 8px;" >
+					</a>
+				</div>
+			</div>
+
 		</div>
 		<!--
         	作者：offline
